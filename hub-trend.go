@@ -1,4 +1,5 @@
-// +build !cgo
+// +build linux,darwin,!cgo
+//go:binary-only-package
 package main
 
 import (
