@@ -30,7 +30,7 @@ install i:
 
 git g:
 	@echo ""
-	@echo "make (git) [gn|gu|gl]"
+	@echo "make (git) [new:gn|update:gu|login:gl]"
 	@echo ""
 
 git-new gn:
