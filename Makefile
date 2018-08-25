@@ -35,7 +35,7 @@ new gn:
 
 update gu:
 	git init
-	git add README.md Makefile *.go vendor/
+	git add README.md Makefile *.go go.* vendor/
 	git commit -m "upload with /vendor"
 	git push -u https://sikang99@github.com/sikang99/$(PROGRAM) master
 
