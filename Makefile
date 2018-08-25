@@ -5,6 +5,9 @@ all: usage
 edit e:
 	vi $(PROGRAM).go
 
+edit-make em:
+	vi Makefile
+
 build b:
 	go build -o $(PROGRAM) $(PROGRAM).go
 
@@ -46,3 +49,4 @@ usage:
 	@echo ""
 	@echo "make [edit|build|run]"
 	@echo ""
+
