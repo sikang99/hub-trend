@@ -2,8 +2,16 @@ PROGRAM=hub-trend
 
 all: usage
 
+usage:
+	@echo ""
+	@echo "make [edit|build|run]"
+	@echo ""
+
 edit e:
 	vi $(PROGRAM).go
+
+edit-readme er:
+	vi README.md
 
 edit-make em:
 	vi Makefile
@@ -22,10 +30,10 @@ install i:
 
 git g:
 	@echo ""
-	@echo "make (git) [gn|gu]"
+	@echo "make (git) [gn|gu|gl]"
 	@echo ""
 
-new gn:
+git-new gn:
 	echo "# hub-trend" >> README.md
 	git init
 	git add README.md
@@ -33,20 +41,13 @@ new gn:
 	git remote add origin https://sikang99@github.com/sikang99/$(PROGRAM).git
 	git push -u origin master
 
-update gu:
+git-update gu:
 	git init
 	git add README.md Makefile *.go go.* vendor/
 	git commit -m "upload with /vendor"
-	git push -u https://sikang99@github.com/sikang99/$(PROGRAM) master
+	git push
 
-md:
-	vi README.md
+git-login gl:
+	git config credential.helper store
 
-make m:
-	vi Makefile
-
-usage:
-	@echo ""
-	@echo "make [edit|build|run]"
-	@echo ""
 
