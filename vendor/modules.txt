@@ -2,7 +2,7 @@
 github.com/PuerkitoBio/goquery
 # github.com/andybalholm/cascadia v1.0.0
 github.com/andybalholm/cascadia
-# github.com/andygrunwald/go-trending v0.0.0-20180329215358-52fad8435aec
+# github.com/andygrunwald/go-trending v0.0.0-20180826184306-5a4d422f8977
 github.com/andygrunwald/go-trending
 # github.com/fatih/color v1.7.0
 github.com/fatih/color
@@ -10,7 +10,7 @@ github.com/fatih/color
 github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.3
 github.com/mattn/go-isatty
-# golang.org/x/net v0.0.0-20180824152047-4bcd98cce591
+# golang.org/x/net v0.0.0-20180826012351-8a410e7b638d
 golang.org/x/net/html
 golang.org/x/net/html/atom
 # golang.org/x/sys v0.0.0-20180824143301-4910a1d54f87
