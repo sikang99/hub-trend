@@ -1,3 +1,6 @@
+#
+# Makefile by Stoney
+#
 PROGRAM=hub-trend
 
 all: usage
@@ -16,18 +19,20 @@ edit-readme er:
 edit-make em:
 	vi Makefile
 
+#-----------------------------------------------------------------------------
 build b:
 	go build -o $(PROGRAM) $(PROGRAM).go
 
 run r:
-	#./$(PROGRAM) -h
-	./$(PROGRAM) -time=week -lang=go
-	./$(PROGRAM) -time=week -lang=go -item=dev
-	./$(PROGRAM) -time=week -lang=go -item=lang
+	-$(PROGRAM) -h
+	$(PROGRAM) -time=week -lang=go
+	$(PROGRAM) -time=week -lang=go -item=dev
+	$(PROGRAM) -time=week -lang=go -item=lang
 
 install i:
 	cp $(PROGRAM) $(GOPATH)/bin
 
+#-----------------------------------------------------------------------------
 git g:
 	@echo ""
 	@echo "make (git) [new:gn|update:gu|login:gl]"
@@ -49,4 +54,4 @@ git-update gu:
 git-login gl:
 	git config credential.helper store
 
-
+#-----------------------------------------------------------------------------
