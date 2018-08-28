@@ -42,7 +42,6 @@ git-new gn:
 	git push -u origin master
 
 git-update gu:
-	git init
 	git add README.md Makefile *.go go.* vendor/
 	git commit -m "upload with /vendor"
 	git push
